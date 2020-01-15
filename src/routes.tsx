@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch, Redirect, RouteComponentProps } from 'rea
 import SignIn from './pages/signIn';
 import SignUp from './pages/signUp';
 import Pets from './pages/pets';
+import Test from './pages/test';
 
 import { userIsAuthenticated } from './services/auth';
 
@@ -31,6 +32,7 @@ const Routes = () => (
 			<Route exact path='/' component={SignIn} />
 			<Route path='/signup' component={SignUp} />
 			<PrivateRoute path='/pets' component={Pets} />
+			<PrivateRoute path='/test' component={Test} />
 			<Route path='*' component={() => <h1>Page not Found</h1>} />
 		</Switch>
 	</BrowserRouter>

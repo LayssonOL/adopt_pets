@@ -1,4 +1,4 @@
-export const _API_KEY_ = '505763d6-4202-4b05-9efc-93b366939bcf';
+export const _API_KEY_ = process.env.API_KEY;
 
 export const access = (key: string) => {
 	localStorage.setItem('_ACCESS_KEY_', key);
